@@ -1,0 +1,10 @@
+{
+  "generator-reveal": {
+    "presentationTitle": "Yeoman",
+    "packageVersion": "0.0.1",
+    "useSass": true,
+    "deployToGithubPages": true,
+    "githubUsername": "tonifisler",
+    "githubRepository": "pres-yeoman"
+  }
+}
