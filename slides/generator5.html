@@ -1,0 +1,20 @@
+<h2>Interagir</h2>
+
+<p>Ajouter ceci à la méthode de <b>prompting</b>:</p>
+
+<pre><code class="json">{
+    type: 'input',
+    name: 'username',
+    message: 'What is your username?',
+    default: 'johndoe'
+}</code></pre>
+<br>
+<p>et ceci dans le retour du prompt:</p>
+
+<code class="js">this.username = props.username;</code>
+
+<aside class="notes">
+    - interagir avec l'utilisateur
+    - demander un input
+    - stocker dans une variable
+</aside>

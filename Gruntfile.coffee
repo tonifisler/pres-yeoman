@@ -30,17 +30,17 @@ module.exports = (grunt) ->
             jshint:
                 files: ['js/*.js']
                 tasks: ['jshint']
-        
+
             sass:
-                files: ['css/source/theme.scss']
+                files: ['css/source/theme.scss', 'css/source/beige.scss']
                 tasks: ['sass']
 
         sass:
 
             theme:
                 files:
-                    'css/theme.css': 'css/source/theme.scss'
-        
+                    'css/theme.css': 'css/source/beige.scss'
+
         connect:
 
             livereload:
@@ -89,7 +89,7 @@ module.exports = (grunt) ->
                     filter: 'isFile'
                 }]
 
-        
+
         buildcontrol:
 
             options:
@@ -101,7 +101,7 @@ module.exports = (grunt) ->
                 options:
                     remote: 'git@github.com:tonifisler/pres-yeoman.git'
                     branch: 'gh-pages'
-        
+
 
 
     # Load all grunt tasks.
@@ -132,7 +132,6 @@ module.exports = (grunt) ->
     grunt.registerTask 'serve',
         'Run presentation locally and start watch process (living document).', [
             'buildIndex'
-            'sass'
             'connect:livereload'
             'watch'
         ]
@@ -151,13 +150,13 @@ module.exports = (grunt) ->
             'copy'
         ]
 
-    
+
     grunt.registerTask 'deploy',
         'Deploy to Github Pages', [
             'dist'
             'buildcontrol'
         ]
-    
+
 
     # Define default task.
     grunt.registerTask 'default', [
