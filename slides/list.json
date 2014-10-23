@@ -1,1 +1,40 @@
-["index.md"]
+[
+    "index.html",
+    "me.html",
+    [
+        "front-end.html",
+        "front-end-1.html",
+        "front-endbis.html"
+    ],
+    [
+        "preprocess.html",
+        "bower.html",
+        "mais.html",
+        "les-problemes.html"
+    ],
+    [
+        "automatisation.html",
+        "commencerwq.html"
+    ],
+    [
+        "comment.html",
+        "installation.html",
+        "reveal.html",
+        "video1.html",
+        "reveal2.html",
+        "reveal3.html",
+        "video2.html",
+        "reveal4.html"
+    ],
+    [
+        "generator.html",
+        "video3.html",
+        "generator2.html",
+        "generator3.html",
+        "generator4.html",
+        "generator5.html",
+        "generator6.html"
+    ],
+    "npm.html",
+    "questions.html"
+]
